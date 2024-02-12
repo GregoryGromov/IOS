@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB6A1962B76373400790B18 /* GymGuru_demo2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1952B76373400790B18 /* GymGuru_demo2App.swift */; };
+		5FB6A1982B76373400790B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1972B76373400790B18 /* ContentView.swift */; };
+		5FB6A19A2B76373500790B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB6A1992B76373500790B18 /* Assets.xcassets */; };
+		5FB6A19D2B76373500790B18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB6A19C2B76373500790B18 /* Preview Assets.xcassets */; };
+		5FB6A1AD2B763A1A00790B18 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1AC2B763A1A00790B18 /* Set.swift */; };
+		5FB6A1AF2B763A2000790B18 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1AE2B763A2000790B18 /* Exercise.swift */; };
+		5FB6A1B12B763A2500790B18 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1B02B763A2500790B18 /* Training.swift */; };
+		5FB6A1B32B763A4500790B18 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1B22B763A4500790B18 /* MainTabView.swift */; };
+		5FB6A1BA2B763C7200790B18 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1B92B763C7200790B18 /* RouterViewModel.swift */; };
+		5FB6A1BD2B763D5900790B18 /* TrainingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1BC2B763D5900790B18 /* TrainingService.swift */; };
+		5FB6A1C22B76450C00790B18 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1C12B76450C00790B18 /* UserService.swift */; };
+		5FB6A1C42B76453800790B18 /* ExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1C32B76453800790B18 /* ExerciseService.swift */; };
+		5FB6A1C62B764B3100790B18 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1C52B764B3100790B18 /* RouterView.swift */; };
+		5FB6A1C82B76502E00790B18 /* TrainingStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1C72B76502E00790B18 /* TrainingStartView.swift */; };
+		5FB6A1CC2B76519500790B18 /* TrainingStartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1CB2B76519500790B18 /* TrainingStartViewModel.swift */; };
+		5FB6A1D12B769C8B00790B18 /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1D02B769C8B00790B18 /* TrainingView.swift */; };
+		5FB6A1D32B769D4700790B18 /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1D22B769D4700790B18 /* TrainingViewModel.swift */; };
+		5FB6A1D52B769E2000790B18 /* GreenCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1D42B769E2000790B18 /* GreenCircles.swift */; };
+		5FB6A1D72B769E3E00790B18 /* SetItemBWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1D62B769E3E00790B18 /* SetItemBWView.swift */; };
+		5FB6A1D92B769E4C00790B18 /* SetItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1D82B769E4C00790B18 /* SetItemView.swift */; };
+		5FB6A1DB2B769EB100790B18 /* AddSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1DA2B769EB100790B18 /* AddSetView.swift */; };
+		5FB6A1DD2B769EB700790B18 /* AddSetBWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1DC2B769EB600790B18 /* AddSetBWView.swift */; };
+		5FB6A1E02B76AB3000790B18 /* ControlWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1DF2B76AB3000790B18 /* ControlWidgetView.swift */; };
+		5FB6A1E22B7783CF00790B18 /* AddExerciseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1E12B7783CE00790B18 /* AddExerciseButton.swift */; };
+		5FB6A1EE2B77877800790B18 /* ExerciseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB6A1ED2B77877800790B18 /* ExerciseItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FB6A1922B76373400790B18 /* GymGuru_demo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymGuru_demo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB6A1952B76373400790B18 /* GymGuru_demo2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymGuru_demo2App.swift; sourceTree = "<group>"; };
+		5FB6A1972B76373400790B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FB6A1992B76373500790B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FB6A19C2B76373500790B18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FB6A1AC2B763A1A00790B18 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		5FB6A1AE2B763A2000790B18 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		5FB6A1B02B763A2500790B18 /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		5FB6A1B22B763A4500790B18 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5FB6A1B92B763C7200790B18 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RouterViewModel.swift; path = ../../../../../../../RouterViewModel.swift; sourceTree = "<group>"; };
+		5FB6A1BC2B763D5900790B18 /* TrainingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingService.swift; sourceTree = "<group>"; };
+		5FB6A1C12B76450C00790B18 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5FB6A1C32B76453800790B18 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
+		5FB6A1C52B764B3100790B18 /* RouterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		5FB6A1C72B76502E00790B18 /* TrainingStartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingStartView.swift; sourceTree = "<group>"; };
+		5FB6A1CB2B76519500790B18 /* TrainingStartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingStartViewModel.swift; sourceTree = "<group>"; };
+		5FB6A1D02B769C8B00790B18 /* TrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		5FB6A1D22B769D4700790B18 /* TrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		5FB6A1D42B769E2000790B18 /* GreenCircles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenCircles.swift; sourceTree = "<group>"; };
+		5FB6A1D62B769E3E00790B18 /* SetItemBWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetItemBWView.swift; sourceTree = "<group>"; };
+		5FB6A1D82B769E4C00790B18 /* SetItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetItemView.swift; sourceTree = "<group>"; };
+		5FB6A1DA2B769EB100790B18 /* AddSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSetView.swift; sourceTree = "<group>"; };
+		5FB6A1DC2B769EB600790B18 /* AddSetBWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSetBWView.swift; sourceTree = "<group>"; };
+		5FB6A1DF2B76AB3000790B18 /* ControlWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlWidgetView.swift; sourceTree = "<group>"; };
+		5FB6A1E12B7783CE00790B18 /* AddExerciseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseButton.swift; sourceTree = "<group>"; };
+		5FB6A1ED2B77877800790B18 /* ExerciseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB6A18F2B76373400790B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FB6A1892B76373400790B18 = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1942B76373400790B18 /* GymGuru_demo2 */,
+				5FB6A1932B76373400790B18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB6A1932B76373400790B18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1922B76373400790B18 /* GymGuru_demo2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB6A1942B76373400790B18 /* GymGuru_demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1A32B7638ED00790B18 /* App */,
+				5FB6A1A42B7638F000790B18 /* Core */,
+				5FB6A1A62B76390F00790B18 /* Models */,
+				5FB6A1AB2B7639B600790B18 /* Service */,
+				5FB6A1A52B76390600790B18 /* MOCK */,
+				5FB6A1992B76373500790B18 /* Assets.xcassets */,
+				5FB6A19B2B76373500790B18 /* Preview Content */,
+			);
+			path = GymGuru_demo2;
+			sourceTree = "<group>";
+		};
+		5FB6A19B2B76373500790B18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A19C2B76373500790B18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5FB6A1A32B7638ED00790B18 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1952B76373400790B18 /* GymGuru_demo2App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5FB6A1A42B7638F000790B18 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1A72B76396B00790B18 /* Statics */,
+				5FB6A1AA2B76398C00790B18 /* TabView */,
+				5FB6A1A82B76397B00790B18 /* Training */,
+				5FB6A1A92B76398200790B18 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5FB6A1A52B76390600790B18 /* MOCK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MOCK;
+			sourceTree = "<group>";
+		};
+		5FB6A1A62B76390F00790B18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1AC2B763A1A00790B18 /* Set.swift */,
+				5FB6A1AE2B763A2000790B18 /* Exercise.swift */,
+				5FB6A1B02B763A2500790B18 /* Training.swift */,
+				5FB6A1ED2B77877800790B18 /* ExerciseItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FB6A1A72B76396B00790B18 /* Statics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Statics;
+			sourceTree = "<group>";
+		};
+		5FB6A1A82B76397B00790B18 /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1B42B763B8700790B18 /* Router */,
+				5FB6A1B52B763BA200790B18 /* Start */,
+				5FB6A1B62B763BBD00790B18 /* InProgress  */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		5FB6A1A92B76398200790B18 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1972B76373400790B18 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5FB6A1AA2B76398C00790B18 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1B22B763A4500790B18 /* MainTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		5FB6A1AB2B7639B600790B18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1C32B76453800790B18 /* ExerciseService.swift */,
+				5FB6A1C12B76450C00790B18 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5FB6A1B42B763B8700790B18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1B82B763C2200790B18 /* View */,
+				5FB6A1B72B763C1D00790B18 /* ViewModel */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5FB6A1B52B763BA200790B18 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1C92B76517A00790B18 /* View */,
+				5FB6A1CA2B76517D00790B18 /* ViewModel */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		5FB6A1B62B763BBD00790B18 /* InProgress  */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1E52B7784D100790B18 /* Main */,
+				5FB6A1E62B7784D600790B18 /* AddExercise */,
+				5FB6A1BB2B763D3500790B18 /* Service */,
+			);
+			path = "InProgress ";
+			sourceTree = "<group>";
+		};
+		5FB6A1B72B763C1D00790B18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1B92B763C7200790B18 /* RouterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FB6A1B82B763C2200790B18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1C52B764B3100790B18 /* RouterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FB6A1BB2B763D3500790B18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1BC2B763D5900790B18 /* TrainingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5FB6A1C92B76517A00790B18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1C72B76502E00790B18 /* TrainingStartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FB6A1CA2B76517D00790B18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1CB2B76519500790B18 /* TrainingStartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FB6A1CD2B769BE500790B18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1D22B769D4700790B18 /* TrainingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FB6A1CE2B769BED00790B18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1D02B769C8B00790B18 /* TrainingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FB6A1CF2B769C2D00790B18 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1DF2B76AB3000790B18 /* ControlWidgetView.swift */,
+				5FB6A1DA2B769EB100790B18 /* AddSetView.swift */,
+				5FB6A1DC2B769EB600790B18 /* AddSetBWView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		5FB6A1DE2B769F1900790B18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1E12B7783CE00790B18 /* AddExerciseButton.swift */,
+				5FB6A1D42B769E2000790B18 /* GreenCircles.swift */,
+				5FB6A1D62B769E3E00790B18 /* SetItemBWView.swift */,
+				5FB6A1D82B769E4C00790B18 /* SetItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5FB6A1E52B7784D100790B18 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1CE2B769BED00790B18 /* View */,
+				5FB6A1CD2B769BE500790B18 /* ViewModel */,
+				5FB6A1CF2B769C2D00790B18 /* Subviews */,
+				5FB6A1DE2B769F1900790B18 /* Components */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5FB6A1E62B7784D600790B18 /* AddExercise */ = {
+			isa = PBXGroup;
+			children = (
+				5FB6A1E82B77851800790B18 /* View */,
+				5FB6A1E72B77851300790B18 /* ViewModel */,
+			);
+			path = AddExercise;
+			sourceTree = "<group>";
+		};
+		5FB6A1E72B77851300790B18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FB6A1E82B77851800790B18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB6A1912B76373400790B18 /* GymGuru_demo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB6A1A02B76373500790B18 /* Build configuration list for PBXNativeTarget "GymGuru_demo2" */;
+			buildPhases = (
+				5FB6A18E2B76373400790B18 /* Sources */,
+				5FB6A18F2B76373400790B18 /* Frameworks */,
+				5FB6A1902B76373400790B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymGuru_demo2;
+			productName = GymGuru_demo2;
+			productReference = 5FB6A1922B76373400790B18 /* GymGuru_demo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB6A18A2B76373400790B18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5FB6A1912B76373400790B18 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5FB6A18D2B76373400790B18 /* Build configuration list for PBXProject "GymGuru_demo2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FB6A1892B76373400790B18;
+			productRefGroup = 5FB6A1932B76373400790B18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB6A1912B76373400790B18 /* GymGuru_demo2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB6A1902B76373400790B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB6A19D2B76373500790B18 /* Preview Assets.xcassets in Resources */,
+				5FB6A19A2B76373500790B18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB6A18E2B76373400790B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB6A1B32B763A4500790B18 /* MainTabView.swift in Sources */,
+				5FB6A1E22B7783CF00790B18 /* AddExerciseButton.swift in Sources */,
+				5FB6A1DB2B769EB100790B18 /* AddSetView.swift in Sources */,
+				5FB6A1CC2B76519500790B18 /* TrainingStartViewModel.swift in Sources */,
+				5FB6A1BD2B763D5900790B18 /* TrainingService.swift in Sources */,
+				5FB6A1D52B769E2000790B18 /* GreenCircles.swift in Sources */,
+				5FB6A1C22B76450C00790B18 /* UserService.swift in Sources */,
+				5FB6A1E02B76AB3000790B18 /* ControlWidgetView.swift in Sources */,
+				5FB6A1DD2B769EB700790B18 /* AddSetBWView.swift in Sources */,
+				5FB6A1982B76373400790B18 /* ContentView.swift in Sources */,
+				5FB6A1D92B769E4C00790B18 /* SetItemView.swift in Sources */,
+				5FB6A1AF2B763A2000790B18 /* Exercise.swift in Sources */,
+				5FB6A1C42B76453800790B18 /* ExerciseService.swift in Sources */,
+				5FB6A1C62B764B3100790B18 /* RouterView.swift in Sources */,
+				5FB6A1D72B769E3E00790B18 /* SetItemBWView.swift in Sources */,
+				5FB6A1EE2B77877800790B18 /* ExerciseItem.swift in Sources */,
+				5FB6A1962B76373400790B18 /* GymGuru_demo2App.swift in Sources */,
+				5FB6A1C82B76502E00790B18 /* TrainingStartView.swift in Sources */,
+				5FB6A1AD2B763A1A00790B18 /* Set.swift in Sources */,
+				5FB6A1B12B763A2500790B18 /* Training.swift in Sources */,
+				5FB6A1D12B769C8B00790B18 /* TrainingView.swift in Sources */,
+				5FB6A1D32B769D4700790B18 /* TrainingViewModel.swift in Sources */,
+				5FB6A1BA2B763C7200790B18 /* RouterViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5FB6A19E2B76373500790B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FB6A19F2B76373500790B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FB6A1A12B76373500790B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymGuru_demo2/Preview Content\"";
+				DEVELOPMENT_TEAM = PU9LYPLT6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diona.GymGuru-demo2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FB6A1A22B76373500790B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymGuru_demo2/Preview Content\"";
+				DEVELOPMENT_TEAM = PU9LYPLT6X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diona.GymGuru-demo2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB6A18D2B76373400790B18 /* Build configuration list for PBXProject "GymGuru_demo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB6A19E2B76373500790B18 /* Debug */,
+				5FB6A19F2B76373500790B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB6A1A02B76373500790B18 /* Build configuration list for PBXNativeTarget "GymGuru_demo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB6A1A12B76373500790B18 /* Debug */,
+				5FB6A1A22B76373500790B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB6A18A2B76373400790B18 /* Project object */;
+}
