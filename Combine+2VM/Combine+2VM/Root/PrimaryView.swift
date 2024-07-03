@@ -1,16 +1,4 @@
-//
-//  PrimaryView.swift
-//  Combine+2VM
-//
-//  Created by Григорий Громов on 03.07.2024.
-//
-
 import SwiftUI
-import Combine
-
-
-
-
 import Combine
 
 struct PrimaryView: View {
