@@ -1,16 +1,8 @@
-//
-//  SwiftUIView.swift
-//  Combine+2VM
-//
-//  Created by Григорий Громов on 03.07.2024.
-//
-
 import SwiftUI
 import Combine
 
 
 struct SecondaryView: View {
-    
     @StateObject var viewModel: SecondaryViewModel
     
     var body: some View {
@@ -24,10 +16,6 @@ struct SecondaryView: View {
         }
     }
 }
-
-
-
-import Combine
 
 class SecondaryViewModel: ObservableObject {
     @Published var editedText = ""
